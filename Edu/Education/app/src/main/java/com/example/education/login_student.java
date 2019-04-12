@@ -7,14 +7,16 @@ import android.view.View;
 import android.widget.Button;
 
 public class login_student extends AppCompatActivity implements View.OnClickListener{
-    private Button login;
+    private Button login, signup;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_student);
 
         login = (Button)findViewById(R.id.loginstudent);
+        signup= (Button)findViewById(R.id.createaccount);
         login.setOnClickListener(this);
+        signup.setOnClickListener(this);
 
     }
 
@@ -23,6 +25,9 @@ public class login_student extends AppCompatActivity implements View.OnClickList
         if(v.getId()==R.id.loginstudent){
             Intent intend = new Intent(login_student.this,Main2ActivityStudent.class);
             startActivity(intend);
+        }else if(v.getId()==R.id.createaccount){
+            Intent intent = new Intent(login_student.this, registerStudent.class);
+            startActivity(intent);
         }
 
     }
