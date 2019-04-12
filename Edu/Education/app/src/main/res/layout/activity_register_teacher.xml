@@ -40,6 +40,7 @@
         android:layout_height="50dp"
         android:hint="Institution"/>
     <Button
+        android:id="@+id/teacher_reg_submit"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="submit"

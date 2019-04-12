@@ -39,7 +39,13 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="Institution"/>
+    <EditText
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Group"/>
     <Button
+        android:id="@+id/std_reg_submit"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="submit"
