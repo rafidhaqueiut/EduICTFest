@@ -59,6 +59,7 @@ public class registerSupervisor extends AppCompatActivity implements View.OnClic
     }
 
     private void addArtist() {
+        /*
         String nam = name.getText().toString().trim();
         String mail = email.getText().toString().trim();
         String i = id.getText().toString().trim();
@@ -73,6 +74,6 @@ public class registerSupervisor extends AppCompatActivity implements View.OnClic
         }else {
             Toast.makeText(getApplicationContext(),"you should",Toast.LENGTH_LONG).show();
 
-        }
+        }*/
     }
 }

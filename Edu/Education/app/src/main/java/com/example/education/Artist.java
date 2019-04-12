@@ -1,25 +1,61 @@
 package com.example.education;
 
 public class Artist {
-    String id, name,group;
-    public Artist() {
+
+
+    String uid;
+    String email;
+    String un;
+    String pass;
+    String cpass;
+    String name;
+    String ins;
+    String id;
+//, String pass, String cpass, String name, String ins, String id
+//
+//        this.pass = pass;
+//        this.cpass = cpass;
+//        this.name = name;
+//        this.ins = ins;
+//        this.id = id;
+    public Artist(String uid, String email, String un) {
+        this.uid = uid;
+        this.email = email;
+        this.un = un;
+    }
+    public String getUid() {
+        return uid;
     }
 
-    public String getId() {
-        return id;
+    public String getUn() {
+        return un;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPass() {
+        return pass;
+    }
+
+    public String getCpass() {
+        return cpass;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getGroup() {
-        return group;
+    public String getIns() {
+        return ins;
     }
 
-    public Artist(String id, String name, String group) {
-        this.id = id;
-        this.name = name;
-        this.group = group;
+    public String getId() {
+        return id;
     }
+
+    public Artist() {
+    }
+
 }
